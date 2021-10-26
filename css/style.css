@@ -1,0 +1,674 @@
+@font-face {
+    font-family: Wisdom_script;
+    src: url(../fonts/Wisdom_script.otf);    
+}
+
+@font-face {
+    font-family: Montserrat_regular;
+    src: url(../fonts/Montserrat_regular.ttf);
+}
+
+@font-face {
+    font-family: DroidSerif_italic;
+    src: url(../fonts/DroidSerif_italic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_bold;
+    src: url(../fonts/Montserrat_bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlab_regular;
+    src: url(../fonts/RobotoSlab_regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    background-image: url(../images/Background_promo.png); 
+    background-size: cover;
+    margin: 0 auto;    
+}
+
+.container {
+    width: 80%;
+    /* max-width: 1280px; */
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header .container .heder_nav .logo {
+    margin-left: 17px;
+}
+
+.header .container .heder_nav .logo a {
+    text-decoration: none;
+    font-family: Wisdom_script;
+    font-size: 32px;
+    color: #fed136;
+}
+
+.header .container .heder_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 45px;
+}
+
+.header .container .heder_nav .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .container .heder_nav .menu ul li {
+    list-style: none;
+}
+
+.header .container .heder_nav .menu ul li:not(:first-child) {
+    margin-left: 40px;
+}
+
+.header .container .heder_nav .menu ul li a {
+    text-decoration: none;
+    font-family: Montserrat_regular;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.header .container .header_promo {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 197px;
+}
+
+.header .container .header_promo .header_promo_content_1 p {
+    font-family: DroidSerif_italic;
+    font-size: 40px;
+}
+
+.header .container .header_promo .header_promo_content_2 p {
+    font-family: Montserrat_bold;
+    text-transform: uppercase;
+    font-size: 75px;
+    word-spacing: -8px;
+    letter-spacing: -1px;
+    padding-top: 25px;
+}
+
+
+.header .container .header_promo button.button_order {
+    border: 0;
+    background-color: #fed136;
+    border-radius: 2px;
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 240px;
+    padding: 23px 0;
+    margin-top: 40px;
+    margin-bottom: 160px;
+    cursor: pointer;
+}
+
+.services .container .services_title p {
+    font-family: Montserrat_bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding-top: 110px;
+}
+
+.services .container .services_sub_title p {
+    font-family: DroidSerif_italic;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    padding-top: 10px;
+}
+
+.services .container .services_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.services .container .services_content .services_content_block_1,
+.services .container .services_content .services_content_block_2,
+.services .container .services_content .services_content_block_3 {
+    width: 270px;
+    min-width: 270px;
+    text-align: center;
+}
+
+.services .container .services_content .services_content_block_1 .icon_basket,
+.services .container .services_content .services_content_block_2 .icon_laptop,
+.services .container .services_content .services_content_block_3 .icon_locked {
+    display: inline-flex;
+    width: 70px;
+    height: 70px;    
+    border: 4px solid #fed136;
+    border-radius: 50% 50%;
+}
+
+.services .container .services_content .services_content_block_1 .icon_basket {
+    background-image: url(../images/Icon_Basket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.services .container .services_content .services_content_block_2 .icon_laptop {
+    background-image: url(../images/Icon_Laptop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.services .container .services_content .services_content_block_3 .icon_locked {
+    background-image: url(../images/Icon_Locked.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.services .container .services_content .services_content_block_1 h3,
+.services .container .services_content .services_content_block_2 h3,
+.services .container .services_content .services_content_block_3 h3  {
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.services .container .services_content .services_content_block_1 p,
+.services .container .services_content .services_content_block_2 p,
+.services .container .services_content .services_content_block_3 p {
+    font-family: RobotoSlab_regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: #777777;
+    padding-top: 10px;
+}
+
+.portfolio {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+}
+
+.portfolio .container .prtfolio_title p {
+    font-family: Montserrat_bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding-top: 110px;
+}
+
+.portfolio .container .prtfolio_sub_title p {
+    font-family: DroidSerif_italic;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.portfolio .container .portfotio_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
+
+.portfolio .container .portfotio_list .portfolio_item {
+    padding-top: 50px;
+}
+
+.portfolio .container .portfotio_list .portfolio_item .portfolio_item_title {
+    background-color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.portfolio .container .portfotio_list .portfolio_item .portfolio_item_title a {
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+.portfolio .container .portfotio_list .portfolio_item .portfolio_item_title .portfolio_item_caption {
+    font-family: DroidSerif_italic;
+    font-size: 14px;
+    color: #777777;
+}
+
+.about .container .about_title p {
+    font-family: Montserrat_bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding-top: 110px;
+}
+
+.about .container .about_sub_title p {
+    font-family: DroidSerif_italic;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.about .container .about_list {
+    margin-top: 65px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+hr {
+    border: none;
+    border-left: 4px solid #f1f1f1;
+    height: 13vh;
+    width: 1px;
+    margin: 0 auto;
+}
+
+.about .container .about_list .about_item_left .about_img,
+.about .container .about_list .about_item_right .about_img {
+    object-fit: cover;
+    display: block;
+    width: 181px;
+    height: 181px;
+}
+
+.about .container .about_list .about_item_left {
+    display: flex;
+    width: calc(50% + 91px);
+    margin-right: auto;
+}
+
+.about .container .about_list .about_item_left .about_item_left_content {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.about .container .about_list .about_item_right {
+    display: flex;
+    width: calc(50% + 91px);
+    margin-left: auto;
+}
+
+.about .container .about_list .about_item_right .about_item_right_content {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.about .container .about_list .about_item_left .about_item_left_content h3,
+.about .container .about_list .about_item_right .about_item_right_content h3 {
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    letter-spacing: -1px;
+    padding-bottom: 5px;
+}
+
+.about .container .about_list .about_item_left .about_item_left_content p,
+.about .container .about_list .about_item_right .about_item_right_content p {
+    font-family: RobotoSlab_regular;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777777;
+    margin-top: 7px;
+}
+
+.about .container .about_list .button_about_order {
+    width: 183px;
+    height: 183px;
+    border: 6px solid #f1f1f1;
+    border-radius: 50% 50%;
+    background-color: #fed136;
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.team .container .team_title p {
+    font-family: Montserrat_bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding-top: 110px;
+}
+
+.team .container .team_sub_title p {
+    font-family: DroidSerif_italic;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.team {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+}
+
+.team .container .team_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.team .container .team_content .team_block_1,
+.team .container .team_content .team_block_2,
+.team .container .team_content .team_block_3 {
+    text-align: center;   
+}
+
+.team .container .team_content .team_block_1 .foto_marketer,
+.team .container .team_content .team_block_2 .foto_coder,
+.team .container .team_content .team_block_3 .foto_designer {
+    width: 250px;
+    height: 250px;
+    border: 6px solid #ffffff;
+    border-radius: 50% 50%;
+    background-color: #000000;
+}
+
+.team .container .team_content .team_block_1 h3,
+.team .container .team_content .team_block_2 h3,
+.team .container .team_content .team_block_3 h3 {
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    letter-spacing: -1px;
+    margin-top: 25px;
+}
+
+.team .container .team_content .team_block_1 p,
+.team .container .team_content .team_block_2 p,
+.team .container .team_content .team_block_3 p {
+    font-family: RobotoSlab_regular;
+    font-size: 14px;
+    color: #777777;
+    margin-top: 3px;
+    margin-bottom: 13px;
+}
+
+.team .container .team_content .team_block_1 .team_icon,
+.team .container .team_content .team_block_2 .team_icon,
+.team .container .team_content .team_block_3 .team_icon {
+    display: flex;
+    justify-content: center;
+}
+
+.team .container .team_content .team_block_1 .team_icon .team_icon_tw,
+.team .container .team_content .team_block_1 .team_icon .team_icon_fb,
+.team .container .team_content .team_block_1 .team_icon .team_icon_pint,
+.team .container .team_content .team_block_2 .team_icon .team_icon_tw,
+.team .container .team_content .team_block_2 .team_icon .team_icon_fb,
+.team .container .team_content .team_block_2 .team_icon .team_icon_g,
+.team .container .team_content .team_block_3 .team_icon .team_icon_fb,
+.team .container .team_content .team_block_3 .team_icon .team_icon_pint {   
+    width: 35px;
+    height: 35px;
+    border: 4px solid #000000;
+    border-radius: 50% 50%;
+    margin: 0 6px;
+}
+
+.team .container .team_content .team_block_1 .team_icon .team_icon_tw,
+.team .container .team_content .team_block_2 .team_icon .team_icon_tw {
+    background-image: url(../images/Twitter_bl.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.team .container .team_content .team_block_1 .team_icon .team_icon_fb,
+.team .container .team_content .team_block_2 .team_icon .team_icon_fb,
+.team .container .team_content .team_block_3 .team_icon .team_icon_fb {
+    background-image: url(../images/Facebook_bl.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.team .container .team_content .team_block_2 .team_icon .team_icon_g {
+    background-image: url(../images/Google_bl.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.team .container .team_content .team_block_1 .team_icon .team_icon_pint,
+.team .container .team_content .team_block_3 .team_icon .team_icon_pint {
+    background-image: url(../images/Pinterest_bl.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.team .container .team_description {
+    font-family: RobotoSlab_regular;
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 120px;
+}
+
+.logos {
+    background-color: #ffffff;
+}
+
+.logos .container .logos_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.logos .container .logos_block .logo_Envato {
+    width: 161px;
+    height: 30px;
+    display: block;
+    margin: auto 0;
+}
+
+.logos .container .logos_block .logo_WordPress {
+    width: 186px;
+    height: 42px;
+    display: block;
+    margin: auto 0;
+}
+
+.logos .container .logos_block .logo_Tuts {
+    width: 131px;
+    height: 41px;
+    display: block;
+    margin: auto 0;
+}
+
+.logos .container .logos_block .logo_Microlancer {
+    width: 167px;
+    height: 42px;
+    display: block;
+    margin: auto 0;
+}
+
+.contacts {
+    position: relative;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts_bg {
+    position: absolute;
+    width: 614px;
+    height: 550px;
+    background-image: url(../images/Map_Image.png);
+    right: 0px;
+    bottom: 0px;
+    
+}
+
+.contacts .container .contacts_title p {
+    font-family: Montserrat_bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    padding-top: 110px;
+}
+
+.contacts .container .contacts_sub_title p {
+    font-family: DroidSerif_italic;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input[type=text],
+input[type=email] {
+    width: 455px;
+    height: 50px;
+    border: 0;
+    border-radius: 3px;
+    text-indent: 20px;
+    font-family: Montserrat_bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+input[type=email] {
+    margin: 30px 0;
+}
+
+input::placeholder {
+    color: #bbbbbb;
+}
+
+textarea {
+    width: 455px;
+    height: 195px;
+    border: 0;
+    border-radius: 3px;
+    text-indent: 20px;
+    font-family: Montserrat_bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 16px;
+}
+
+textarea::placeholder {
+    color: #bbbbbb;
+}
+
+.contacts .container button.send {
+    border: 0;
+    background-color: #fed136;
+    border-radius: 2px;
+    font-family: Montserrat_bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 240px;
+    padding: 23px 0;
+    margin-top: 30px;
+    margin-bottom: 106px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.footer .container .footer_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    margin-right: calc(50% - 100px);
+}
+
+.footer .container .footer_content .footer_copyright p{
+    font-family: Montserrat_bold;
+    font-size: 14px;
+    color: #777777;
+    margin-top: 10px;
+}
+
+.footer .container .footer_content .footer_icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container .footer_content .footer_icon a .footer_icon_bg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50% 50%;
+}
+
+.footer .container .footer_content .footer_icon a .footer_icon_bg {
+    margin: 0 5px;
+}
+
+.footer .container .footer_content .footer_icon a .footer_icon_tw {
+    position: absolute;
+    width: 16px;
+    height: 19px;
+    background-image: url(../images/Twitter_wt.png);
+    left: 12px;
+    top: 10.5px;
+}
+
+.footer .container .footer_content .footer_icon a .footer_icon_fb {
+    position: absolute;
+    width: 11px;
+    height: 19px;
+    background-image: url(../images/Facebook_wt.png);
+    left: 14.5px;
+    top: 10.5px;
+}
+
+.footer .container .footer_content .footer_icon a .footer_icon_pint {
+    position: absolute;
+    width: 17px;
+    height: 21px;
+    background-image: url(../images/Pinterest_wt.png);
+    left: 11.5px;
+    top: 9.5px;
+}
+
+.footer .container .footer_content .footer_icon a .footer_icon_g {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/Google_wt.png);
+    left: 11.5px;
+    top: 11.5px;
+}
